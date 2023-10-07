@@ -81,7 +81,7 @@ header {
 
 header .logo {
     margin: 0;
-    padding: 15px 25px;
+    padding: 10px 25px;
     font-weight: bold;
     display: flex; /* Distribución como tablas */
     align-items: center;
@@ -136,18 +136,26 @@ header a:hover {
 }
 
 #history .container {
+    margin-top: 3.5%;
+    margin-bottom: 1.5%;
     text-align: center;
     padding: 0% 5%;
 }
 
 #history h2 {
     padding-top: 4%;
+    font-size: 2.65em;
 }
 
 #present .container {
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
     text-align: center;
-    padding: 1.5% 5%;
-    
+    padding: 2% 5%;
+}
+
+#present h2 {
+    font-size: 2.65em;
 }
 
 #aifuture {
@@ -155,13 +163,17 @@ header a:hover {
     padding: 1.5% 5%;
 }
 
-#curiosities { text-align: center;
-    /*background-color: aqua;*/
+#aifuture h2 {
+    font-size: 2.65em;
+}
+
+#curiosities { 
+    text-align: center;
 }
 
 #curiosities .container {
-    padding-top: 10px;
-    padding-bottom: 45px;
+    padding-top: 2.5%;
+    margin-bottom: 5.25%;
  }
 
 #curiosities p {
@@ -169,9 +181,9 @@ header a:hover {
 }
 
 #curiosities h2 {
-    padding-top: 5%;
+    padding-top: 1.25%;
     margin-top: 0;
-    font-size: 2.1em;
+    font-size: 2.65em;
 }
 
 
@@ -187,50 +199,63 @@ header a:hover {
 .cards:first-child {
     background-image: /* Imagen de fondo */
     linear-gradient(0deg
-    , rgba(0, 8, 19, 0.5) /* Degradado para que el fondo se vea más oscuro */
-    ,rgba(16, 134, 231, 0.5) )
+    , rgba(2, 31, 73, 0.5) /* Degradado para que el fondo se vea más oscuro */
+    ,rgba(3, 41, 72, 0.5) )
     ,url("../images/at4.jfif");
+    background-position: center center;
+    background-size: cover;
 }
 
 .cards:nth-child(2) {
     background-image: /* Imagen de fondo */
     linear-gradient(0deg
     , rgba(0, 7, 15, 0.5) /* Degradado para que el fondo se vea más oscuro */
-    ,rgba(15, 135, 233, 0.5) )
+    ,rgba(10, 100, 174, 0.5) )
     ,url("../images/dbchess.jpg");
+    background-position: center center;
+    background-size: cover;
 }
 
 .cards:last-child {
     background-image: /* Imagen de fondo */
     linear-gradient(0deg
     , rgba(0, 7, 17, 0.5) /* Degradado para que el fondo se vea más oscuro */
-    ,rgba(16, 132, 226, 0.5) )
+    ,rgba(25, 129, 214, 0.5) )
     ,url("../images/toai.png");
     background-position: center center;
     background-size: cover;
 }
 
 footer  {
-    background-color: rgb(49, 124, 228);
-    
+    background-color: rgb(36, 115, 225);   
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(11, 11, 11);
 }
 
 footer p {
     margin: 0;
+    font-size: 1.27em;
 }
 
 footer .container {
-    height: 50px;
-    display: flex;
+    height: 85px;
+    display:column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     font-weight: bold;
 }
 
-@media (min-width:798px) {
+@media (min-width:746px) {
     #hero {
         height:100vh;
         font-size: 1.55em;
+    }
+    #hero h1 {
+        font-size: 2.75em;
     }
     header {
         position: fixed;
@@ -246,8 +271,41 @@ footer .container {
         flex-direction: row; /* Columnas en el nav */
         align-items: center;
         padding-bottom: 0px; /* Eliminamos padding */
-        font-size: 1.65em; /* Aumentamos tamaño */
+        font-size: 1.6em; /* Aumentamos tamaño */
     }
+    #history {
+        padding-bottom: 45px;
+    }
+    #history .container {
+        padding-top: 30px;
+        display:flex;
+        justify-content: center;
+    }
+
+    #history .texto {
+        width:75%;
+        text-align: justify;
+        padding-right: 6.75%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #history .contenedor-img {
+        background-image: /* Imagen de fondo */
+        linear-gradient(0deg
+        , rgba(0, 18, 41, 0.325) /* Degradado para que el fondo se vea más oscuro */
+        ,rgba(18, 149, 255, 0.325) )
+        ,url("../images/at1.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 500px;
+        border-radius: 40px;
+        box-shadow: 4px 4px 20px rgb(15, 15, 15);
+    }
+
     #present .container {
         display:flex;
         padding: 0% 6%;
@@ -259,7 +317,7 @@ footer .container {
     #present .texto {
         width:75%;
         text-align: justify;
-        padding-left: 45px;
+        padding-left: 6.75%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -269,22 +327,96 @@ footer .container {
     #present .contenedor-img {
         background-image: /* Imagen de fondo */
         linear-gradient(0deg
-        , rgba(0, 18, 41, 0.5) /* Degradado para que el fondo se vea más oscuro */
-        ,rgba(18, 149, 255, 0.5) )
+        , rgba(0, 18, 41, 0.25) /* Degradado para que el fondo se vea más oscuro */
+        ,rgba(18, 149, 255, 0.25) )
         ,url("../images/ai1.jpg");
         background-size: cover;
         background-position: center center;
         height: 500px;
         width: 500px;
         border-radius: 40px;
-    }
-
-    #history {
-        padding-bottom: 45px;
+        box-shadow: 4px 4px 20px rgb(15, 15, 15);
     }
 
     #aifuture {
         padding-top: 45px;
+        
     }
 
+    #aifuture .imagenes {
+        display:flex;
+        justify-content: center;
+    }
+
+    #aifuture .imagen1 {
+        background-image: /* Imagen de fondo */
+        linear-gradient(0deg
+        , rgba(0, 18, 41, 0.25) /* Degradado para que el fondo se vea más oscuro */
+        ,rgba(18, 149, 255, 0.25) )
+        ,url("../images/ai4.png");
+        background-size: cover;
+        background-position: center center;
+        height: 350px;
+        width: 350px;
+        border-radius: 40px;
+        margin-right: 5%;
+        box-shadow: 4px 4px 20px rgb(15, 15, 15);
+    }
+    
+    #aifuture .imagen2 {
+        background-image: /* Imagen de fondo */
+        linear-gradient(0deg
+        , rgba(0, 18, 41, 0.2) /* Degradado para que el fondo se vea más oscuro */
+        ,rgba(18, 149, 255, 0.2) )
+        ,url("../images/ai2.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 350px;
+        width: 350px;
+        border-radius: 40px;
+        box-shadow: 4px 4px 20px rgb(15, 15, 15);
+    }
+
+}
+
+@media only screen and (width > 1288px) {
+    #curiosities .carta {
+        display:inline-flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #curiosities p {
+        display: block;
+        margin-bottom: 30px;
+        color:rgb(207, 255, 250);
+        font-weight: bold;
+    }
+    #curiosities h3 {
+        font-size: 1.95em;
+        margin-top: 0;
+    }
+    #curiosities .cards {
+        box-shadow: 4px 4px 20px rgb(15, 15, 15);
+        flex: 1;
+        max-width: calc(33.333% - 20px);
+        padding: 20px;
+        height: 425px;
+    }
+    .cards:nth-child(2) p {
+        padding-top: 23px;
+        padding-bottom: 33px;
+    }
+    .cards:first-child p {
+        padding-top: 5px;
+        padding-bottom: 21px;
+    }
+}
+
+@media only screen and (width <= 975px) and (width > 746px) {
+    #history .contenedor-img {
+        height: 669px;
+    }
+    #present .contenedor-img {
+        height: 605px;
+    }
 }
