@@ -321,13 +321,12 @@ footer a {
 
 footer p {
     margin: 0;
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 
 footer .logo {
-    padding-right: 8.5px;
+    padding-right: 7px;
     font-family: 'Ethnocentric';
-    font-size: 1.23em;
     text-decoration: none;
 }
 
