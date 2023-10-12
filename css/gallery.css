@@ -1,0 +1,366 @@
+/**********************************************************/
+/* Web de Inteligencia Artificial                         */
+/* Hoja de estilo para gallery.html                       */
+/* Autor: David Solera Romero                             */
+/* Versión: 1.0                                           */
+/* 12 de octubre de 2023                                  */
+/**********************************************************/
+
+* {box-sizing: border-box;}
+
+/* Fuentes */
+@font-face {
+    font-family: Ethnocentric;
+    src: url(../fonts/ethnocentric.otf);
+}
+@font-face {
+    font-family: Aero;
+    src: url(../fonts/Aero.ttf);
+}
+
+body {
+    margin: 0;
+    background: radial-gradient(circle, rgb(12, 52, 133) 0%, rgb(52, 163, 255) 100%);
+}
+
+#wrapper {width:80%;
+    margin:auto;}
+h1 {font-size: 2.15em;
+    font-weight: bold;}
+h2 {font-size: 1.75em;}
+h1,h2 { font-family: 'Ethnocentric';
+        color: rgb(219, 247, 253);}
+h3 {font-size: 1.35em;
+    font-family: 'Aero';
+    color: rgb(219, 247, 253);}
+header p { font-size: 1.35em;
+        color: rgb(219, 247, 253);
+        font-family: 'Ethnocentric'; }
+p { font-size: 1.15em;
+    font-family: 'Roboto';}
+h1,h2,h3{
+text-align: center;
+padding-bottom:10px;
+}
+
+section {padding: 6% 0;}
+
+.vacio {padding-bottom: 15px;
+    background-color: rgb(36, 115, 225);}
+
+.fa {
+padding: 20px;
+font-size: 30px;
+width: 30px; height: 30px; border-radius: 50%;
+text-align: center;
+text-decoration: none;
+margin: 5px 2px;
+color:#15cdee;
+box-sizing: content-box;
+}
+
+#ai {
+    --b: 0.2em;   /* the thickness of the line */
+    --c: #03d4fe; /* the color */
+    color: #DBF7F1;
+    background: 
+    linear-gradient(var(--c) 50%,#000 0) 0% calc(100% - var(--_p,0%))/100% 200%,
+    linear-gradient(var(--c) 0 0) 0% var(--_p,0%)/var(--_p,0%) var(--b) no-repeat;
+    -webkit-background-clip: text,padding-box;
+            background-clip: text,padding-box;
+    transition: .3s var(--_s,0s) linear,background-size .3s calc(.3s - var(--_s,0s));
+}
+#ai:hover {
+    --_p: 100%;
+    --_s: .3s;
+    color: #03d4fe;
+}
+
+.ai {
+    --c: rgb(219, 247, 253); /* the color */
+    --b: .1em;    /* border length*/
+    --d: 7.5px;    /* the cube depth */
+    
+    --_s: calc(var(--d) + var(--b));
+    
+    color: var(--c);
+    border: solid #03d4fe;
+    border-width: var(--b) var(--b) var(--_s) var(--_s);
+    background:
+    conic-gradient(at left var(--d)  bottom var(--d),
+    #0000 90deg, rgb(255 255 255 /0.3) 0 225deg,rgb(255 255 255 /0.6) 0) border-box,
+    conic-gradient(at left var(--_s) bottom var(--_s),
+    #0000 90deg,var(--c) 0) 0 100%/calc(100% - var(--b)) calc(100% - var(--b))  border-box;
+    transform: translate(calc(var(--d)/-1),var(--d));
+    clip-path: 
+    polygon(
+    var(--d) 0%, 
+    var(--d) 0%, 
+    100% 0%, 
+    100% calc(100% - var(--d)),
+    100% calc(100% - var(--d)),
+    var(--d) calc(100% - var(--d))
+    );
+    transition: 0.5s;
+}
+.ai:hover {
+    transform: translate(0,0);
+    clip-path: 
+    polygon(
+    0% var(--d), 
+    var(--d) 0%, 
+    100% 0%, 
+    100% calc(100% - var(--d)), 
+    calc(100% - var(--d)) 100%, 
+    0% 100%
+    );
+}
+
+.fa:hover {
+opacity: 0.7;}
+
+html {scroll-behavior: smooth;}
+
+/* Barra de navegación */
+
+nav {
+position: sticky;
+top:0;
+z-index: 999; /* esto marca el nivel de capa en el que debe aparecer un elemento*/
+}
+
+.active {
+    font-family: 'Ethnocentric';
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+background-color: rgb(6, 114, 182);
+overflow: hidden;
+/* opacity:0.5; se usa para disminuir la opacidad de la barra */
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+float: left;
+display: block;
+color: #f2f2f2;
+text-align: left;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 1.6rem;
+font-weight: bold;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+background-color: rgb(57, 196, 238);
+color: rgb(255, 255, 255);
+font-weight: bold;
+transition: 0.6s;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+display: none;
+padding:0px; /* añadido para que no engorde la barra con el icono de la hamburguesa */
+}
+
+.topnav .active{
+    text-align: left;
+    margin-top: 6px;
+}
+
+nav .ai {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+/* LAS MEDIA QUERIES DE MI BARRA DE NAVEGACIÓN ESTARÁN AQUÍ */
+
+@media screen and (max-width: 750px) {
+.topnav a:not(:first-child) {display: none;}
+.topnav a.icon {
+float: right;
+display: block;
+}
+}
+@media screen and (max-width: 750px) {
+.topnav.responsive {position: relative;}
+.topnav.responsive a.icon {
+position: absolute;
+right: 0;
+top: 0;
+}
+.topnav.responsive a {
+float: none;
+display: block;
+text-align: left;
+}
+}
+
+/* HERO */
+
+#home{background-image: url('../images/galeriahero.jfif'); /* imagen fondo */
+height:100vh; /* para obligar a que se vea más allá del contenido (alto imagen) */
+background-repeat: no-repeat; /* no la repitas */
+background-size: cover; /* cubre todo el fondo */
+background-position: 50%; /* fija lo que hay en el medio o lo que indiquemos */
+
+padding-left:3.25%; /* espacio para el texto por la izquierda */
+padding-top:3.25%; /* espacio para el texto por arriba */
+}
+
+#titulo{
+width: 33%; /* ancho */ 
+padding: 2%; /* borde interior de un bloque */
+border-radius: 35%; /* redondear esquinas de un bloque */
+margin-left:60%;
+text-align: center; /* alinear el texto al centro */
+font-family: titulos; /* tipo de letra utilizada */
+font-size: 2.75rem; /* tamaño triple de lo normal */
+color:#c3a6f6;
+}
+
+/* Galeria de fotos */
+
+.grid3{display:grid;
+ grid-template-columns: auto auto auto;}
+
+.tercios img {width: 100%;
+        padding: 4%;}
+
+/* Galeria de videos */
+
+.container {
+position: relative;
+overflow: hidden;
+width: 100%;
+padding-top: 56.25%; 
+}
+
+.responsive-iframe {
+position: absolute;
+top: 0;
+left: 0;
+bottom: 0;
+right: 0;
+width: 100%;
+height: 100%;
+padding:5%;
+}
+
+.grid2{display:grid;
+grid-template-columns: auto auto;}
+
+.tercios img {width: 100%;
+padding: 2%;}
+
+/* FOOTER */
+
+footer .logo a:hover{
+    color: rgb(127, 232, 255);
+    transform: scale(0, 0);
+    transition: all 0.75s ease; /* Tiempo que tarda en eliminarse el color */
+}
+
+footer .logo a:hover::after {
+    transition: all 0.35s ease-out; /* Tiempo que tarda en aparecer el color */
+    transform: scale(1, 1);
+}
+
+footer .info a:hover{
+    color: rgb(127, 232, 255);
+    transform: scale(0, 0);
+    transition: all 0.75s ease; /* Tiempo que tarda en eliminarse el color */
+}
+footer .info a:hover{
+    transition: all 0.35s ease-out; /* Tiempo que tarda en aparecer el color */
+    transform: scale(1, 1);
+}
+
+footer .logo {
+    padding-right: 60px;
+    font-size: 1.35em;
+}
+footer  {
+    background-color: rgb(36, 115, 225);
+    padding-bottom: 3.75px;   
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(11, 11, 11);
+}
+
+footer p {
+    margin: 0;
+    font-size: 1.1em;
+}
+
+footer .logo {
+    padding-right: 7px;
+    padding-top: 7px;
+    font-family: 'Ethnocentric';
+    text-decoration: none;
+}
+
+footer .logo a{ 
+    color: rgb(219, 247, 253);
+}
+
+footer .info {
+    color: rgb(219, 247, 253);
+}
+
+footer .info a {
+    color: rgb(219, 247, 253);
+}
+
+footer .contenedor {
+    height: 105px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+}
+.info p {
+    display: block;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (width<= 1050px){
+#wrapper {width:95%;}
+.grid3  {grid-template-columns: 50% 50%;}
+.grid2  {grid-template-columns: 100%;}
+.active { margin-top: 11px; }
+.info p {
+    display: none;
+}
+footer .logo {
+    font-size: 1.2em;
+    padding-bottom: 4px;
+}
+nav .ai {
+    margin-top: 10px;
+    margin-left: 0px;
+}
+}
+
+@media only screen and (width<= 750px){
+#wrapper{width:100%}
+.grid3  {grid-template-columns: 100%;}
+.grid2  {grid-template-columns: 100%;}
+.info p {
+    display: none;
+}
+footer .logo {
+    font-size: 1.2em;
+    padding-bottom: 4px;
+}
+.topnav a{
+    font-size: 1.5rem;
+}
+}

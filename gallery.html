@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI's Gallery</title>
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/ai-logo.jpg" type="image/x-icon">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/gallery.css">
+    <!-- JavaScript -->
+    <script src="./js/hamburguer.js"></script>
+</head>
+<body>
+        <nav>
+            <div class="topnav" id="myTopnav">
+                <a href="./index.html" class="active" id="ai">Artificial<br>Intelligence</a>
+                <a href="#home" class="ai">Home</a>
+                <a href="#IMAGES" class="ai">AI Photos</a>
+                <a href="#VIDEOS" class="ai">AI Videos</a>
+
+                <!-- El último botón es especial 
+                se desactiva su href para que no mande a ningún sitio -->
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
+              </div>
+        </nav>
+        
+        <section id="home">
+            <div id="titulo">
+            <p></p>
+            </div>
+        </section>
+        <div id="wrapper">
+        <!-- SECCION DE LA GALERÍA-->
+        <section id="IMAGES">
+            <h1>Image's Gallery</h1>
+            <div class="grid3">
+                <div class="tercios">
+                    <img src="./images/imagen1.png" alt="Sylas, campeón de LoL">
+                </div>
+
+                <div class="tercios">
+                    <img src="./images/imagen2.jpg" alt="Pyke, campeón de LoL">
+                </div>
+
+                <div class="tercios">
+                    <img src="./images/imagen3.jpg" alt="Akshan, campeón de LoL">
+                </div>
+
+                <div class="tercios">
+                    <img src="./images/imagen4.jpg" alt="Irelia, campeona de LoL">
+                </div>
+
+                <div class="tercios">
+                    <img src="./images/imagen5.jpg" alt="Shaco, campeón de LoL">
+                </div>
+
+                <div class="tercios">
+                    <img src="./images/imagen6.jpg" alt="Pantheon, campeón de LoL">
+                </div>
+            </div>
+        </section>
+
+        <section id="VIDEOS">
+            <h1>Videos Gallery</h1>
+            <div class="grid2">
+                <div class="container">
+                    <iframe class="responsive-iframe" src="https://www.youtube.com/embed/Uzuk4vraXpA?si=452VySVErOY71qAg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+
+                <div class="container">
+                    <iframe class="responsive-iframe" src="https://www.youtube.com/embed/ad79nYk2keg?si=AZ5NNsVk_x0ShYkG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="fin-float"></div>
+        </section>
+        </div>
+        <footer>
+            <div class="contenedor">
+                <div class="logo">
+                <p class="logo"><a href="#" class="ai3">Artificial<br> Intelligence</a></p>
+                </div>
+                <div class="info">
+                <p><small>&copy; David Solera Romero</small></p>
+                <p><small><a href="mailto:soleraromerodavid@gmail.com">soleraromerodavid@gmail.com</a></small></p>
+                </div>
+            </div>
+        </footer>
+        <div class="vacio"></div>
+    </div>
+</body>
+</html>
