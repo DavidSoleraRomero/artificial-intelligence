@@ -33,9 +33,6 @@ h1,h2 { font-family: 'Ethnocentric';
 h3 {font-size: 1.35em;
     font-family: 'Aero';
     color: rgb(219, 247, 253);}
-header p { font-size: 1.35em;
-        color: rgb(219, 247, 253);
-        font-family: 'Ethnocentric'; }
 p { font-size: 1.15em;
     font-family: 'Roboto';}
 h1,h2,h3{
@@ -50,7 +47,7 @@ section {padding: 6% 0;}
 
 .fa {
 padding: 20px;
-font-size: 30px;
+font-size: 35px;
 width: 30px; height: 30px; border-radius: 50%;
 text-align: center;
 text-decoration: none;
@@ -103,6 +100,9 @@ box-sizing: content-box;
     );
     transition: 0.5s;
 }
+.ai a {
+    padding: 0;
+}
 .ai:hover {
     transform: translate(0,0);
     clip-path: 
@@ -126,22 +126,21 @@ html {scroll-behavior: smooth;}
 nav {
 position: sticky;
 top:0;
-z-index: 999; /* esto marca el nivel de capa en el que debe aparecer un elemento*/
+z-index: 999;
 }
 
 .active {
     font-family: 'Ethnocentric';
+    margin-bottom: 5px;
+    margin-top: 5px;
 }
 
-/* Add a black background color to the top navigation */
-.topnav {
+.miNav {
 background-color: rgb(6, 114, 182);
 overflow: hidden;
-/* opacity:0.5; se usa para disminuir la opacidad de la barra */
 }
 
-/* Style the links inside the navigation bar */
-.topnav a {
+.miNav a {
 float: left;
 display: block;
 color: #f2f2f2;
@@ -152,23 +151,13 @@ font-size: 1.6rem;
 font-weight: bold;
 }
 
-/* Change the color of links on hover */
-.topnav a:hover {
-background-color: rgb(57, 196, 238);
-color: rgb(255, 255, 255);
-font-weight: bold;
-transition: 0.6s;
-}
-
-/* Hide the link that should open and close the topnav on small screens */
-.topnav .icon {
+.miNav .icon {
 display: none;
-padding:0px; /* añadido para que no engorde la barra con el icono de la hamburguesa */
+padding:0px;
 }
 
-.topnav .active{
+.miNav a .active{
     text-align: left;
-    margin-top: 6px;
 }
 
 nav .ai {
@@ -176,23 +165,25 @@ nav .ai {
     margin-left: 20px;
 }
 
-/* LAS MEDIA QUERIES DE MI BARRA DE NAVEGACIÓN ESTARÁN AQUÍ */
+/* Media Queries Barra de Navegación */
 
 @media screen and (max-width: 750px) {
-.topnav a:not(:first-child) {display: none;}
-.topnav a.icon {
+.miNav a:not(:first-child) {display: none;}
+.miNav a.icon {
+padding-top: 5px;
+font-size: 35px;
 float: right;
 display: block;
 }
 }
 @media screen and (max-width: 750px) {
-.topnav.responsive {position: relative;}
-.topnav.responsive a.icon {
+.miNav.responsive {position: relative;}
+.miNav.responsive a.icon {
 position: absolute;
 right: 0;
 top: 0;
 }
-.topnav.responsive a {
+.miNav.responsive a {
 float: none;
 display: block;
 text-align: left;
@@ -201,33 +192,32 @@ text-align: left;
 
 /* HERO */
 
-#home{background-image: url('../images/galeriahero.jfif'); /* imagen fondo */
-height:100vh; /* para obligar a que se vea más allá del contenido (alto imagen) */
-background-repeat: no-repeat; /* no la repitas */
-background-size: cover; /* cubre todo el fondo */
-background-position: 50%; /* fija lo que hay en el medio o lo que indiquemos */
+#home{background-image: url('../images/galeriahero.jfif'); 
+height:100vh; 
+background-repeat: no-repeat; 
+background-size: cover; 
+background-position: 50%; 
 
-padding-left:3.25%; /* espacio para el texto por la izquierda */
-padding-top:3.25%; /* espacio para el texto por arriba */
+padding-left:3.25%; 
+padding-top:3.25%; 
 }
 
 #titulo{
-width: 33%; /* ancho */ 
-padding: 2%; /* borde interior de un bloque */
-border-radius: 35%; /* redondear esquinas de un bloque */
+width: 33%;
+padding: 2%; 
+border-radius: 35%; 
 margin-left:60%;
-text-align: center; /* alinear el texto al centro */
-font-family: titulos; /* tipo de letra utilizada */
-font-size: 2.75rem; /* tamaño triple de lo normal */
+text-align: center; 
+font-size: 2.75rem; 
 color:#c3a6f6;
 }
 
 /* Galeria de fotos */
 
 .grid3{display:grid;
- grid-template-columns: auto auto auto;}
+grid-template-columns: auto auto auto;}
 
-.tercios img {width: 100%;
+.imagenes img {width: 100%;
         padding: 4%;}
 
 /* Galeria de videos */
@@ -253,10 +243,10 @@ padding:5%;
 .grid2{display:grid;
 grid-template-columns: auto auto;}
 
-.tercios img {width: 100%;
+.imagenes img {width: 100%;
 padding: 2%;}
 
-/* FOOTER */
+/* Footer */
 
 footer .logo a:hover{
     color: rgb(127, 232, 255);
@@ -335,7 +325,7 @@ footer .contenedor {
 #wrapper {width:95%;}
 .grid3  {grid-template-columns: 50% 50%;}
 .grid2  {grid-template-columns: 100%;}
-.active { margin-top: 11px; }
+.active { margin-top: 7px; }
 .info p {
     display: none;
 }
@@ -360,7 +350,7 @@ footer .logo {
     font-size: 1.2em;
     padding-bottom: 4px;
 }
-.topnav a{
+.miNav a{
     font-size: 1.5rem;
 }
 }
