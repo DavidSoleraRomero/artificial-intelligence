@@ -141,14 +141,16 @@ overflow: hidden;
 }
 
 .miNav a {
-float: left;
-display: block;
-color: #f2f2f2;
-text-align: left;
-padding: 14px 16px;
-text-decoration: none;
-font-size: 1.2rem;
-font-weight: bold;
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 12.5px;
+    padding-bottom: 15px;
 }
 
 .miNav .icon {
