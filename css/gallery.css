@@ -147,7 +147,7 @@ color: #f2f2f2;
 text-align: left;
 padding: 14px 16px;
 text-decoration: none;
-font-size: 1.6rem;
+font-size: 1.2rem;
 font-weight: bold;
 }
 
@@ -170,7 +170,7 @@ nav .ai {
 @media screen and (max-width: 750px) {
 .miNav a:not(:first-child) {display: none;}
 .miNav a.icon {
-padding-top: 5px;
+padding-top: 1px;
 font-size: 35px;
 float: right;
 display: block;
@@ -350,7 +350,11 @@ footer .logo {
     font-size: 1.2em;
     padding-bottom: 4px;
 }
+.miNav #ai {
+    margin-bottom: 7px;
+}
 .miNav a{
-    font-size: 1.5rem;
+    padding-bottom: 15px;
+    font-size: 1.2rem;
 }
 }

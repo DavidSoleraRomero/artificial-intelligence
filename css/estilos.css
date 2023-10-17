@@ -179,9 +179,9 @@ footer .info a:hover{
     text-align: left;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     font-weight: bold;
-    margin-bottom: 5px;
+    padding-top: 15px;
     }
 
 nav {
@@ -396,7 +396,7 @@ footer .container {
     .miNav a.icon {
     float: right;
     display: block;
-    padding-top: 30px;
+    padding-top: 20px;
     padding-right: 25px;
     font-size: 35px;
     }
