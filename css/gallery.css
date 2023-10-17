@@ -132,7 +132,7 @@ z-index: 999;
 .active {
     font-family: 'Ethnocentric';
     margin-bottom: 5px;
-    margin-top: 5px;
+    margin-top: 6px;
 }
 
 .miNav {
@@ -149,8 +149,8 @@ overflow: hidden;
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: bold;
-    margin-bottom: 12.5px;
-    padding-bottom: 15px;
+    margin-bottom: 7px;
+    padding-bottom: 12.5px;
 }
 
 .miNav .icon {
@@ -159,6 +159,7 @@ padding:0px;
 }
 
 .miNav a .active{
+    
     text-align: left;
 }
 
