@@ -321,6 +321,17 @@ footer .contenedor {
 .info p {
     display: block;
 }
+footer .logo {
+    padding-left: 135px;
+    font-size: 1.35em;
+}
+footer .github img {
+    background-size: cover;
+    background-position: center center;
+    height: 62.5px;
+    width: 62.5px;
+    margin-left: 400px;
+}
 
 /* MEDIA QUERIES */
 
@@ -334,12 +345,29 @@ footer .contenedor {
 }
 footer .logo {
     font-size: 1.2em;
-    padding-bottom: 4px;
+    padding-bottom: 2px;
 }
+
 nav .ai {
     margin-top: 10px;
     margin-left: 0px;
 }
+}
+
+@media only screen and (width < 1288px) {
+    footer .github img {
+        background-size: cover;
+        background-position: center center;
+        height: 50px;
+        width: 50px;
+        margin-left: 40px;
+    }
+    footer .logo {
+        padding-left: 0px;
+    }
+    .info p {
+        display: none;
+    }
 }
 
 @media only screen and (width<= 750px){
@@ -351,7 +379,7 @@ nav .ai {
 }
 footer .logo {
     font-size: 1.2em;
-    padding-bottom: 4px;
+    padding-bottom: 2px;
 }
 .miNav #ai {
     margin-bottom: 7px;
