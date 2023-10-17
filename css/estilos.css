@@ -355,6 +355,16 @@ footer .container {
     text-align: center;
     font-weight: bold;
 }
+
+footer .github img {
+    background-size: cover;
+    background-position: center center;
+    height: 50px;
+    width: 50px;
+    margin-left: 62.5px;
+}
+
+
 #aifuture .imagenes {
     display:flex;
     justify-content: center;
@@ -387,10 +397,6 @@ footer .container {
     width: 310px;
     border-radius: 40px;
     box-shadow: 4px 4px 20px rgb(15, 15, 15);
-}
-
-.info p {
-    display: none;
 }
 
 @media screen and (max-width: 1065px) {
@@ -515,11 +521,33 @@ p { font-size: 1.45em;}
 }
 
 footer .logo {
-    padding-right: 60px;
+    padding-left: 135px;
     font-size: 1.35em;
 }
+footer .github img {
+    background-size: cover;
+    background-position: center center;
+    height: 62.5px;
+    width: 62.5px;
+    margin-left: 400px;
 }
 
+}
+@media only screen and (width < 1288px) {
+    footer .github img {
+        background-size: cover;
+        background-position: center center;
+        height: 50px;
+        width: 50px;
+        margin-left: 40px;
+    }
+    footer .logo {
+        padding-left: 0px;
+    }
+    .info p {
+        display: none;
+    }
+}
 @media only screen and (width > 1288px) {
 #curiosities .carta {
     display:inline-flex;
@@ -555,6 +583,7 @@ footer .logo {
     padding-top: 9px;
     padding-bottom: 10px;
 }
+
 }
 
 @media only screen and (width <= 975px) and (width > 746px) {
