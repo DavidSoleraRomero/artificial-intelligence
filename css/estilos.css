@@ -52,6 +52,7 @@ p { font-size: 1.15em;
         box-shadow: 4px 3px 18px rgba(0,0,0,0.85);
         padding: 16px 20px;
 }
+/* Animaciones */
 .botones:hover {
     color: rgb(169, 222, 255);
     transition: all 0.25s ease-out;
@@ -157,12 +158,12 @@ footer .info a:hover{
     transition: all 0.35s ease-out; /* Tiempo que tarda en aparecer el color */
     transform: scale(1, 1);
 }
-
+/* Actúa como Wrapper */
 .container {
     margin:auto;
     max-width: 1450px;
 }
-
+/* Barra de navegación */
 .active {
     font-family: 'Ethnocentric';
     margin-top: 6px;
@@ -191,7 +192,7 @@ nav {
     top:0;
     z-index: 999; /* esto marca el nivel de capa en el que debe aparecer un elemento*/
 }
-
+/* Hero section */
 #hero {
     display: flex; /* Distribución como tablas */
     align-items: center;
@@ -217,7 +218,7 @@ nav {
     text-decoration: none;
     color:rgb(212, 250, 255);
 }
-
+/* History section */
 #history .container {
     margin-top: 3.5%;
     margin-bottom: 1.5%;
@@ -229,7 +230,7 @@ nav {
     padding-top: 4%;
     font-size: 2.65em;
 }
-
+/* Present section */
 #present .container {
     margin-top: 1.5%;
     margin-bottom: 1.5%;
@@ -240,7 +241,7 @@ nav {
 #present h2 {
     font-size: 2.65em;
 }
-
+/* Future section */
 #aifuture {
     text-align: center;
     padding: 1.5% 5%;
@@ -249,7 +250,7 @@ nav {
 #aifuture h2 {
     font-size: 2.65em;
 }
-
+/* Curiosities section */
 #curiosities { 
     text-align: center;
 }
@@ -257,7 +258,7 @@ nav {
 #curiosities .container {
     padding-top: 2.5%;
     margin-bottom: 5.25%;
- }
+}
 
 #curiosities p {
     display: none;
@@ -313,7 +314,7 @@ nav {
     background-position: center center;
     background-size: cover;
 }
-
+/* Footer */
 footer  {
     background-color: rgb(36, 115, 225);
     padding-bottom: 3.75px;   
@@ -364,7 +365,7 @@ footer .github img {
     margin-left: 62.5px;
 }
 
-
+/* Imágenes Future */
 #aifuture .imagenes {
     display:flex;
     justify-content: center;
@@ -398,7 +399,7 @@ footer .github img {
     border-radius: 40px;
     box-shadow: 4px 4px 20px rgb(15, 15, 15);
 }
-
+/* Media Queries */
 @media screen and (max-width: 1065px) {
     .miNav a:not(:first-child) {display: none;}
     .miNav a.icon {

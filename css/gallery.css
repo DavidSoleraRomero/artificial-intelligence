@@ -17,7 +17,7 @@
     font-family: Aero;
     src: url(../fonts/Aero.ttf);
 }
-
+/* Estilado general */
 body {
     margin: 0;
     background: radial-gradient(circle, rgb(12, 52, 133) 0%, rgb(52, 163, 255) 100%);
@@ -55,7 +55,7 @@ margin: 5px 2px;
 color:#15cdee;
 box-sizing: content-box;
 }
-
+/* Animaciones */
 #ai {
     --b: 0.2em;   /* the thickness of the line */
     --c: #03d4fe; /* the color */
