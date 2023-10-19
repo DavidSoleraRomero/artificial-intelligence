@@ -119,6 +119,16 @@ box-sizing: content-box;
 .fa:hover {
 opacity: 0.7;}
 
+.github img:hover{
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    box-shadow: 0px 0px 15px 15px rgb(76, 175, 255);
+    -webkit-box-shadow: 0px 0px 15px 15px rgb(76, 175, 255);
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transition: all 0.35s ease-out; /* Tiempo que tarda en aparecer el color */
+    }
+
 html {scroll-behavior: smooth;}
 
 /* Barra de navegación */
