@@ -25,6 +25,7 @@ html { scroll-behavior: smooth; }
 body {
     margin: 0;
     background: radial-gradient(circle, rgb(12, 52, 133) 0%, rgb(52, 163, 255) 100%);
+    color: rgb(219, 247, 253);
 }
 h1 {font-size: 2.15em;
     font-weight: bold;}
@@ -158,6 +159,15 @@ footer .info a:hover{
     transition: all 0.35s ease-out; /* Tiempo que tarda en aparecer el color */
     transform: scale(1, 1);
 }
+.github img:hover{
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    box-shadow: 0px 0px 15px 15px rgb(76, 175, 255);
+    -webkit-box-shadow: 0px 0px 15px 15px rgb(76, 175, 255);
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transition: all 0.35s ease-out; /* Tiempo que tarda en aparecer el color */
+    }
 /* Actúa como Wrapper */
 .container {
     margin:auto;
@@ -220,19 +230,18 @@ nav {
 }
 /* History section */
 #history .container {
-    margin-top: 3.5%;
-    margin-bottom: 1.5%;
+    margin-top: 4.5%;
     text-align: center;
     padding: 0% 5%;
 }
 
 #history h2 {
-    padding-top: 4%;
+    margin-top: 7%;
     font-size: 2.65em;
 }
 /* Present section */
 #present .container {
-    margin-top: 1.5%;
+    margin-top: 3.2%;
     margin-bottom: 1.5%;
     text-align: center;
     padding: 2% 5%;
@@ -244,7 +253,8 @@ nav {
 /* Future section */
 #aifuture {
     text-align: center;
-    padding: 1.5% 5%;
+    padding: 0% 5%;
+    margin-top: 3%;
 }
 
 #aifuture h2 {
@@ -256,6 +266,7 @@ nav {
 }
 
 #curiosities .container {
+    margin-top: 2%;
     padding-top: 2.5%;
     margin-bottom: 5.25%;
 }
@@ -573,15 +584,15 @@ footer .github img {
     height: 425px;
 }
 .cards:nth-child(2) p {
-    padding-top: 25px;
+    padding-top: 45px;
     padding-bottom: 20px;
 }
 .cards:first-child p {
-        padding-top: 14px;
-        padding-bottom: 29px;
+        padding-top: 45px;
+        padding-bottom: 20px;
 }
 .cards:last-child p {
-    padding-top: 9px;
+    padding-top: 21px;
     padding-bottom: 10px;
 }
 
