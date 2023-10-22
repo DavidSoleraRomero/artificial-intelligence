@@ -354,7 +354,7 @@ footer .github img {
     display: none;
 }
 footer .logo {
-    font-size: 1.2em;
+    font-size: 1.03em;
     padding-bottom: 2px;
 }
 
@@ -371,6 +371,7 @@ nav .ai {
         height: 50px;
         width: 50px;
         margin-left: 40px;
+        margin-top: 10px;
     }
     footer .logo {
         padding-left: 0px;
@@ -388,9 +389,9 @@ nav .ai {
     display: none;
 }
 footer .logo {
-    font-size: 1.2em;
     padding-bottom: 2px;
 }
+
 .miNav #ai {
     margin-bottom: 7px;
 }
